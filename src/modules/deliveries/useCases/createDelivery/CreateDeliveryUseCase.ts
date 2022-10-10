@@ -1,4 +1,3 @@
-import { prisma } from "@prisma/client";
 import { prismaClient } from "../../../../database/prismaClient";
 
 interface ICreateDelivery {
@@ -15,7 +14,7 @@ class CreateDeliveryUseCase {
       },
     });
 
-    return delivery
+    return delivery;
   }
 }
 
